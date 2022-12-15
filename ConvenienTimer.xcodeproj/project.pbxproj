@@ -7,23 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB88720A49A84279C8F7CF13 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8870E12F8406DB24F1CE56 /* Time.swift */; };
+		BB8872B8CCE6B42C8563957B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8870EA0B295E1594FEB861 /* ViewController.swift */; };
+		BB887343286E1877D79C09A1 /* HistoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB887D109CE792BE1A264092 /* HistoryService.swift */; };
+		BB88744E8575CB5B3DCFE173 /* TableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB887957610D84E4FB5A016A /* TableCell.xib */; };
+		BB8874F977C9242F3A73FAB4 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8872274A45F8FD39DB53A8 /* AlertService.swift */; };
+		BB887625ED2B52524FECA5C1 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB887420345F1AA0B570AF5E /* ViewController.xib */; };
+		BB88776FE113CE6ACA74B744 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB887B6AE276106256F50FD4 /* Presenter.swift */; };
+		BB8877E6E319AC6EBC531C4B /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8875759A0CA7324154F720 /* ViewModel.swift */; };
+		BB88797A5926B8F6A04AC7D8 /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB887372116386405D5C1824 /* TableCell.swift */; };
+		BB887B620DD8113A7850633F /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB887AA7D1A3B7711E23D3A9 /* CircleView.swift */; };
 		D06B92B32947899700B9828C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06B92B22947899700B9828C /* AppDelegate.swift */; };
-		D06B92B52947899700B9828C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06B92B42947899700B9828C /* SceneDelegate.swift */; };
-		D06B92B72947899700B9828C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06B92B62947899700B9828C /* ViewController.swift */; };
-		D06B92BA2947899700B9828C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D06B92B82947899700B9828C /* Main.storyboard */; };
 		D06B92BC2947899700B9828C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D06B92BB2947899700B9828C /* Assets.xcassets */; };
 		D06B92BF2947899700B9828C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D06B92BD2947899700B9828C /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB8870E12F8406DB24F1CE56 /* Time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
+		BB8870EA0B295E1594FEB861 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BB8872274A45F8FD39DB53A8 /* AlertService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
+		BB887372116386405D5C1824 /* TableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
+		BB887420345F1AA0B570AF5E /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		BB8875759A0CA7324154F720 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		BB887957610D84E4FB5A016A /* TableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableCell.xib; sourceTree = "<group>"; };
+		BB887AA7D1A3B7711E23D3A9 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		BB887B6AE276106256F50FD4 /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		BB887D109CE792BE1A264092 /* HistoryService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryService.swift; sourceTree = "<group>"; };
 		D06B92AF2947899700B9828C /* Convenientimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Convenientimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D06B92B22947899700B9828C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D06B92B42947899700B9828C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D06B92B62947899700B9828C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D06B92B92947899700B9828C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D06B92BB2947899700B9828C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D06B92BE2947899700B9828C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D06B92C02947899700B9828C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D06B92C02947899700B9828C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,10 +51,64 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BB887043425D71DD586706BC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BB8870E12F8406DB24F1CE56 /* Time.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BB8872E578D3BA9AE063FE75 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				BB8872274A45F8FD39DB53A8 /* AlertService.swift */,
+				BB887D109CE792BE1A264092 /* HistoryService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		BB88767F8E12ECED9C8AD580 /* TableCell */ = {
+			isa = PBXGroup;
+			children = (
+				BB887372116386405D5C1824 /* TableCell.swift */,
+				BB887957610D84E4FB5A016A /* TableCell.xib */,
+			);
+			path = TableCell;
+			sourceTree = "<group>";
+		};
+		BB887A7CF1EEC77C3BA34FE0 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BB8870EA0B295E1594FEB861 /* ViewController.swift */,
+				BB8875759A0CA7324154F720 /* ViewModel.swift */,
+				BB887420345F1AA0B570AF5E /* ViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		BB887DAF8062FF1503A04FDC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BB887AA7D1A3B7711E23D3A9 /* CircleView.swift */,
+				BB88767F8E12ECED9C8AD580 /* TableCell */,
+				BB887A7CF1EEC77C3BA34FE0 /* ViewController */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BB887DEEC5A76C17ED2BF385 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				BB887B6AE276106256F50FD4 /* Presenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		D06B92A62947899700B9828C = {
 			isa = PBXGroup;
 			children = (
-				D06B92B12947899700B9828C /* Convenientimer */,
+				D06B92B12947899700B9828C /* ConvenienTimer */,
 				D06B92B02947899700B9828C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,18 +121,19 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D06B92B12947899700B9828C /* Convenientimer */ = {
+		D06B92B12947899700B9828C /* ConvenienTimer */ = {
 			isa = PBXGroup;
 			children = (
 				D06B92B22947899700B9828C /* AppDelegate.swift */,
-				D06B92B42947899700B9828C /* SceneDelegate.swift */,
-				D06B92B62947899700B9828C /* ViewController.swift */,
-				D06B92B82947899700B9828C /* Main.storyboard */,
 				D06B92BB2947899700B9828C /* Assets.xcassets */,
 				D06B92BD2947899700B9828C /* LaunchScreen.storyboard */,
 				D06B92C02947899700B9828C /* Info.plist */,
+				BB887DEEC5A76C17ED2BF385 /* Presenter */,
+				BB887043425D71DD586706BC /* Model */,
+				BB887DAF8062FF1503A04FDC /* View */,
+				BB8872E578D3BA9AE063FE75 /* Service */,
 			);
-			path = Convenientimer;
+			path = ConvenienTimer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,7 +171,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D06B92AA2947899700B9828C /* Build configuration list for PBXProject "Convenientimer" */;
+			buildConfigurationList = D06B92AA2947899700B9828C /* Build configuration list for PBXProject "ConvenienTimer" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -127,7 +196,8 @@
 			files = (
 				D06B92BF2947899700B9828C /* LaunchScreen.storyboard in Resources */,
 				D06B92BC2947899700B9828C /* Assets.xcassets in Resources */,
-				D06B92BA2947899700B9828C /* Main.storyboard in Resources */,
+				BB88744E8575CB5B3DCFE173 /* TableCell.xib in Resources */,
+				BB887625ED2B52524FECA5C1 /* ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +208,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D06B92B72947899700B9828C /* ViewController.swift in Sources */,
 				D06B92B32947899700B9828C /* AppDelegate.swift in Sources */,
-				D06B92B52947899700B9828C /* SceneDelegate.swift in Sources */,
+				BB88776FE113CE6ACA74B744 /* Presenter.swift in Sources */,
+				BB88720A49A84279C8F7CF13 /* Time.swift in Sources */,
+				BB887B620DD8113A7850633F /* CircleView.swift in Sources */,
+				BB8874F977C9242F3A73FAB4 /* AlertService.swift in Sources */,
+				BB887343286E1877D79C09A1 /* HistoryService.swift in Sources */,
+				BB88797A5926B8F6A04AC7D8 /* TableCell.swift in Sources */,
+				BB8872B8CCE6B42C8563957B /* ViewController.swift in Sources */,
+				BB8877E6E319AC6EBC531C4B /* ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D06B92B82947899700B9828C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D06B92B92947899700B9828C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D06B92BD2947899700B9828C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -285,16 +353,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2T7P8BR7NV;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Convenientimer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,6 +370,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = name.djachenko.Convenientimer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -313,16 +384,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2T7P8BR7NV;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Convenientimer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,6 +401,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = name.djachenko.Convenientimer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -339,7 +413,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D06B92AA2947899700B9828C /* Build configuration list for PBXProject "Convenientimer" */ = {
+		D06B92AA2947899700B9828C /* Build configuration list for PBXProject "ConvenienTimer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D06B92C12947899700B9828C /* Debug */,

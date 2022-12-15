@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="Convenientimer" customModuleProvider="target">
+            <connections>
+                <outlet property="circlesContainer" destination="HeO-TJ-HmO" id="ehH-VB-t5r"/>
+                <outlet property="hourCircle" destination="K1c-md-sxV" id="Rsf-BT-lRb"/>
+                <outlet property="leftButton" destination="62L-Ek-Trf" id="jaV-4A-2zy"/>
+                <outlet property="minuteCircle" destination="8pE-wD-YeJ" id="HSk-w5-krq"/>
+                <outlet property="rightButton" destination="zjT-B5-YM4" id="A9r-Xi-sQB"/>
+                <outlet property="secondCircle" destination="6cQ-Zh-ULV" id="pfh-Ua-aGr"/>
+                <outlet property="tableView" destination="dfU-K2-QRE" id="hhi-NC-534"/>
+                <outlet property="timeLabel" destination="DC0-Xz-c7y" id="6wQ-Gk-gpI"/>
+                <outlet property="view" destination="dfU-K2-QRE" id="fCU-di-U2E"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="dfU-K2-QRE">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <view key="tableHeaderView" contentMode="scaleToFill" id="JT1-rf-aoT" userLabel="Header" customClass="UITableViewH">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="378.66666666666669"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HeO-TJ-HmO" userLabel="Circles">
+                        <rect key="frame" x="39.333333333333343" y="10" width="314.33333333333326" height="314.33333333333331"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6cQ-Zh-ULV" userLabel="Seconds" customClass="CircleView" customModule="Convenientimer" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="314.33333333333331" height="314.33333333333331"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="6cQ-Zh-ULV" secondAttribute="height" multiplier="1:1" id="AJJ-10-k2b"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" systemColor="systemRedColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="id" value="secs"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8pE-wD-YeJ" userLabel="Minutes" customClass="CircleView" customModule="Convenientimer" customModuleProvider="target">
+                                <rect key="frame" x="31.333333333333329" y="31.333333333333329" width="251.66666666666669" height="251.66666666666669"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="8pE-wD-YeJ" secondAttribute="height" multiplier="1:1" id="J5k-h9-4Zz"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" systemColor="systemGreenColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="id" value="mins"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K1c-md-sxV" userLabel="Hours" customClass="CircleView" customModule="Convenientimer" customModuleProvider="target">
+                                <rect key="frame" x="62.999999999999986" y="62.999999999999986" width="188.33333333333331" height="188.66666666666663"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="K1c-md-sxV" secondAttribute="height" multiplier="1:1" id="jRD-L0-ddR"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" systemColor="systemBlueColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="id" value="hrs"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DC0-Xz-c7y">
+                                <rect key="frame" x="122.33333333333331" y="140.33333333333334" width="69.666666666666686" height="33.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8pE-wD-YeJ" firstAttribute="centerY" secondItem="HeO-TJ-HmO" secondAttribute="centerY" id="3jr-3d-vRD"/>
+                            <constraint firstItem="8pE-wD-YeJ" firstAttribute="width" secondItem="HeO-TJ-HmO" secondAttribute="width" multiplier="0.8" id="EDw-rU-bHP"/>
+                            <constraint firstItem="6cQ-Zh-ULV" firstAttribute="centerX" secondItem="HeO-TJ-HmO" secondAttribute="centerX" id="I8j-OF-2VZ"/>
+                            <constraint firstItem="K1c-md-sxV" firstAttribute="centerX" secondItem="HeO-TJ-HmO" secondAttribute="centerX" id="Lgn-Vw-LNV"/>
+                            <constraint firstItem="6cQ-Zh-ULV" firstAttribute="centerY" secondItem="HeO-TJ-HmO" secondAttribute="centerY" id="OjC-An-4HE"/>
+                            <constraint firstItem="DC0-Xz-c7y" firstAttribute="centerX" secondItem="HeO-TJ-HmO" secondAttribute="centerX" id="WC7-yI-g9p"/>
+                            <constraint firstItem="DC0-Xz-c7y" firstAttribute="centerY" secondItem="HeO-TJ-HmO" secondAttribute="centerY" id="ZtR-4d-X2u"/>
+                            <constraint firstItem="K1c-md-sxV" firstAttribute="centerY" secondItem="HeO-TJ-HmO" secondAttribute="centerY" id="bkJ-pX-8Kq"/>
+                            <constraint firstItem="K1c-md-sxV" firstAttribute="centerY" secondItem="HeO-TJ-HmO" secondAttribute="centerY" id="cQd-IS-i8w"/>
+                            <constraint firstItem="8pE-wD-YeJ" firstAttribute="centerX" secondItem="HeO-TJ-HmO" secondAttribute="centerX" id="eID-u5-8f2"/>
+                            <constraint firstItem="K1c-md-sxV" firstAttribute="width" secondItem="HeO-TJ-HmO" secondAttribute="width" multiplier="0.6" id="ee0-nC-APn"/>
+                            <constraint firstItem="6cQ-Zh-ULV" firstAttribute="width" secondItem="HeO-TJ-HmO" secondAttribute="width" id="f2O-4r-UeI"/>
+                            <constraint firstAttribute="width" secondItem="HeO-TJ-HmO" secondAttribute="height" multiplier="1:1" id="iV0-a9-Dge"/>
+                            <constraint firstItem="6cQ-Zh-ULV" firstAttribute="centerY" secondItem="HeO-TJ-HmO" secondAttribute="centerY" id="pta-WK-Uog"/>
+                            <constraint firstItem="6cQ-Zh-ULV" firstAttribute="width" secondItem="6cQ-Zh-ULV" secondAttribute="height" multiplier="1:1" id="x1C-EB-1Ec"/>
+                            <constraint firstItem="8pE-wD-YeJ" firstAttribute="centerY" secondItem="HeO-TJ-HmO" secondAttribute="centerY" id="xZ0-e0-TMW"/>
+                        </constraints>
+                    </view>
+                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yrP-L1-R4r">
+                        <rect key="frame" x="39.333333333333343" y="344.33333333333331" width="314.33333333333326" height="24.333333333333314"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="62L-Ek-Trf">
+                                <rect key="frame" x="0.0" y="0.0" width="157.33333333333334" height="24.333333333333332"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Reset"/>
+                                <connections>
+                                    <action selector="didTapLeftButton" destination="-1" eventType="touchUpInside" id="AJZ-2o-ZN4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zjT-B5-YM4">
+                                <rect key="frame" x="157.33333333333331" y="0.0" width="157" height="24.333333333333332"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="didTapRightButton" destination="-1" eventType="touchUpInside" id="vnV-cZ-sPs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                <constraints>
+                    <constraint firstItem="yrP-L1-R4r" firstAttribute="top" secondItem="HeO-TJ-HmO" secondAttribute="bottom" constant="20" id="06b-S0-eQm"/>
+                    <constraint firstItem="HeO-TJ-HmO" firstAttribute="top" secondItem="JT1-rf-aoT" secondAttribute="top" constant="10" id="0ge-ln-iyl"/>
+                    <constraint firstAttribute="bottom" secondItem="yrP-L1-R4r" secondAttribute="bottom" constant="10" id="65X-0i-pVO"/>
+                    <constraint firstItem="HeO-TJ-HmO" firstAttribute="centerX" secondItem="JT1-rf-aoT" secondAttribute="centerX" id="SuS-Wy-h0Z"/>
+                    <constraint firstItem="HeO-TJ-HmO" firstAttribute="width" secondItem="JT1-rf-aoT" secondAttribute="width" multiplier="0.8" id="aMd-6I-rqs"/>
+                    <constraint firstItem="yrP-L1-R4r" firstAttribute="width" secondItem="JT1-rf-aoT" secondAttribute="width" multiplier="0.8" id="fRG-s6-DYB"/>
+                    <constraint firstItem="yrP-L1-R4r" firstAttribute="centerX" secondItem="JT1-rf-aoT" secondAttribute="centerX" id="s7F-lk-3Z1"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="dataSource" destination="-1" id="bgy-tv-ICc"/>
+                <outlet property="delegate" destination="-1" id="Krx-Ag-w2J"/>
+            </connections>
+            <point key="canvasLocation" x="8" y="619"/>
+        </tableView>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
