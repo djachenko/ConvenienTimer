@@ -19,7 +19,7 @@ class Presenter {
         }
     }
 
-    private var timer: Timer!
+    private var timer: Timer?
 
     private var state: State = .stopped {
         didSet {
@@ -64,7 +64,6 @@ class Presenter {
         view.datasource = self
     }
 
-
     private func start() {
 
         let totalSeconds = time.totalSeconds()
@@ -94,14 +93,13 @@ class Presenter {
 
         historyService.add(entry: time)
 
-        view.reload()
+        view.reloadHistory()
 
         state = .ticking
     }
 
-
     private func stop() {
-        timer.invalidate()
+        timer?.invalidate()
 
         state = .stopped
     }

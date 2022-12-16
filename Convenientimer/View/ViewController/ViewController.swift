@@ -55,22 +55,25 @@ class ViewController: UIViewController {
         tableView.register(UINib(nibName: String(describing: TableCell.self), bundle: nil), forCellReuseIdentifier: TableCell.identifier)
     }
 
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
 
-//        [
-//            hourCircle,
-//            minuteCircle,
-//            secondCircle,
-//        ].forEach {
-//            $0.relayout()
-//        }
+        [
+            hourCircle,
+            minuteCircle,
+            secondCircle,
+        ].forEach {
+            // needs to be called just once after adjusting views to screen
+            // because shapelayer ignores constraints
+            // didLayoutSubviews triggers on animation
+            $0.relayout()
+        }
     }
 
     func set(time: Time) {
         timeLabel.text = time.asString()
 
-        hourCircle.set(value: CGFloat(time.hours) / 12)
+        hourCircle.set(value: CGFloat(time.hours) / 11)
         minuteCircle.set(value: CGFloat(time.minutes) / 59)
         secondCircle.set(value: CGFloat(time.seconds) / 59)
     }
@@ -85,7 +88,7 @@ class ViewController: UIViewController {
         circlesContainer.isUserInteractionEnabled = state.isSliderEnabled
     }
 
-    func reload() {
+    func reloadHistory() {
         tableView.reloadData()
     }
 

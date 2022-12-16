@@ -17,10 +17,21 @@ class HistoryService {
     private var cachedHistory: History?
 
     var history: History {
-        let history = cachedHistory ?? read()
-        cachedHistory = history
+        cachedHistory = cachedHistory ?? read()
 
-        return history
+        return cachedHistory!
+    }
+
+    func add(entry: Time) {
+        let existingEntries = history
+
+        var updated_entries = [entry] + existingEntries.filter { $0 != entry }
+
+        updated_entries = Array(updated_entries.prefix(HistoryService.size))
+
+        cachedHistory = updated_entries
+
+        write(entries: updated_entries)
     }
 
     private func read() -> History {
@@ -32,16 +43,8 @@ class HistoryService {
         return []
     }
 
-    func add(entry: Time) {
-        let existingEntries = history
-
-        var new_entries = [entry] + existingEntries.filter { $0 != entry }
-
-        new_entries = Array(new_entries.prefix(HistoryService.size))
-
-        cachedHistory = new_entries
-
-        if let encoded = try? JSONEncoder().encode(new_entries) {
+    private func write(entries: History) {
+        if let encoded = try? JSONEncoder().encode(entries) {
             defaults.set(encoded, forKey: HistoryService.key)
         }
     }

@@ -15,6 +15,8 @@ protocol CircleViewDelegate: AnyObject {
 }
 
 class CircleView: UIView {
+    private static let animationKey = "stroke end"
+
     @IBInspectable private var lineWidth: CGFloat = 0 {
         didSet {
             relayout()
@@ -33,8 +35,6 @@ class CircleView: UIView {
     private(set) var value: CGFloat = 0
 
     weak var delegate: CircleViewDelegate?
-
-    var debounceTimer:Timer?
 
     required init?(coder: NSCoder) {
         super.init(coder: coder)
@@ -93,8 +93,6 @@ class CircleView: UIView {
         animateEnd()
     }
 
-    static let animationKey = "stroke end"
-
     private func animateEnd() {
         let animation = CABasicAnimation(keyPath: "strokeEnd")
 
@@ -105,6 +103,7 @@ class CircleView: UIView {
 
         shapeLayer?.strokeEnd = value
 
+        // key is important for replacing existing animation if it hasn't ended
         shapeLayer?.add(animation, forKey: CircleView.animationKey)
     }
 
@@ -117,16 +116,10 @@ class CircleView: UIView {
     }
 
     @objc private func didPan(_ sender: UIPanGestureRecognizer) {
-//        debounceTimer?.invalidate()
-//        debounceTimer = Timer.scheduledTimer(withTimeInterval: 0.05, repeats: false) { [weak self] _ in
-//            guard let self else {
-//                return
-//            }
-
             let location = sender.location(in: self)
 
-            let dx = location.x - self.boundsCenter.x
-            let dy = location.y - self.boundsCenter.y
+            let dx = location.x - boundsCenter.x
+            let dy = location.y - boundsCenter.y
 
             let radius = sqrt(pow(dx, 2) + pow(dy, 2))
 
@@ -142,9 +135,8 @@ class CircleView: UIView {
 
             let t = angle / (2 * .pi)
 
-            self.value = t
+            value = t
 
-            self.delegate?.didChangeValue()
-//        }
+            delegate?.didChangeValue()
     }
 }
