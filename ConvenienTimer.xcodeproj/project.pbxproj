@@ -33,7 +33,7 @@
 		BB887AA7D1A3B7711E23D3A9 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		BB887B6AE276106256F50FD4 /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		BB887D109CE792BE1A264092 /* HistoryService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryService.swift; sourceTree = "<group>"; };
-		D06B92AF2947899700B9828C /* Convenientimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Convenientimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D06B92AF2947899700B9828C /* ConvenienTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConvenienTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D06B92B22947899700B9828C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D06B92BB2947899700B9828C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D06B92BE2947899700B9828C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -116,7 +116,7 @@
 		D06B92B02947899700B9828C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D06B92AF2947899700B9828C /* Convenientimer.app */,
+				D06B92AF2947899700B9828C /* ConvenienTimer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -139,9 +139,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D06B92AE2947899700B9828C /* Convenientimer */ = {
+		D06B92AE2947899700B9828C /* ConvenienTimer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D06B92C32947899700B9828C /* Build configuration list for PBXNativeTarget "Convenientimer" */;
+			buildConfigurationList = D06B92C32947899700B9828C /* Build configuration list for PBXNativeTarget "ConvenienTimer" */;
 			buildPhases = (
 				D06B92AB2947899700B9828C /* Sources */,
 				D06B92AC2947899700B9828C /* Frameworks */,
@@ -151,9 +151,9 @@
 			);
 			dependencies = (
 			);
-			name = Convenientimer;
+			name = ConvenienTimer;
 			productName = Convenientimer;
-			productReference = D06B92AF2947899700B9828C /* Convenientimer.app */;
+			productReference = D06B92AF2947899700B9828C /* ConvenienTimer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -184,7 +184,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D06B92AE2947899700B9828C /* Convenientimer */,
+				D06B92AE2947899700B9828C /* ConvenienTimer */,
 			);
 		};
 /* End PBXProject section */
@@ -422,7 +422,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D06B92C32947899700B9828C /* Build configuration list for PBXNativeTarget "Convenientimer" */ = {
+		D06B92C32947899700B9828C /* Build configuration list for PBXNativeTarget "ConvenienTimer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D06B92C42947899700B9828C /* Debug */,

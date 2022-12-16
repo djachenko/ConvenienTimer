@@ -34,6 +34,8 @@ class CircleView: UIView {
 
     weak var delegate: CircleViewDelegate?
 
+    var debounceTimer:Timer?
+
     required init?(coder: NSCoder) {
         super.init(coder: coder)
 
@@ -91,10 +93,10 @@ class CircleView: UIView {
         animateEnd()
     }
 
+    static let animationKey = "stroke end"
+
     private func animateEnd() {
         let animation = CABasicAnimation(keyPath: "strokeEnd")
-
-        print(value)
 
         animation.toValue = value //?
         animation.duration = CFTimeInterval(1)
@@ -103,7 +105,7 @@ class CircleView: UIView {
 
         shapeLayer?.strokeEnd = value
 
-        shapeLayer?.add(animation, forKey: "stroke end")
+        shapeLayer?.add(animation, forKey: CircleView.animationKey)
     }
 
     override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
@@ -115,27 +117,34 @@ class CircleView: UIView {
     }
 
     @objc private func didPan(_ sender: UIPanGestureRecognizer) {
-        let location = sender.location(in: self)
+//        debounceTimer?.invalidate()
+//        debounceTimer = Timer.scheduledTimer(withTimeInterval: 0.05, repeats: false) { [weak self] _ in
+//            guard let self else {
+//                return
+//            }
 
-        let dx = location.x - boundsCenter.x
-        let dy = location.y - boundsCenter.y
+            let location = sender.location(in: self)
 
-        let radius = sqrt(pow(dx, 2) + pow(dy, 2))
+            let dx = location.x - self.boundsCenter.x
+            let dy = location.y - self.boundsCenter.y
 
-        let cosAngle = acos(-dy / radius)
+            let radius = sqrt(pow(dx, 2) + pow(dy, 2))
 
-        let angle: Double
+            let cosAngle = acos(-dy / radius)
 
-        if dx > 0 {
-            angle = 2 * .pi - cosAngle
-        } else {
-            angle = cosAngle
-        }
+            let angle: Double
 
-        let t = angle / (2 * .pi)
+            if dx > 0 {
+                angle = 2 * .pi - cosAngle
+            } else {
+                angle = cosAngle
+            }
 
-        value = t
+            let t = angle / (2 * .pi)
 
-        delegate?.didChangeValue()
+            self.value = t
+
+            self.delegate?.didChangeValue()
+//        }
     }
 }

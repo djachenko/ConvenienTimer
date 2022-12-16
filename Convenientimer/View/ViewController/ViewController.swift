@@ -52,19 +52,19 @@ class ViewController: UIViewController {
             $0.delegate = self
         }
 
-        tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: TableCell.identifier)
+        tableView.register(UINib(nibName: String(describing: TableCell.self), bundle: nil), forCellReuseIdentifier: TableCell.identifier)
     }
 
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
 
-        [
-            hourCircle,
-            minuteCircle,
-            secondCircle,
-        ].forEach {
-            $0.relayout()
-        }
+//        [
+//            hourCircle,
+//            minuteCircle,
+//            secondCircle,
+//        ].forEach {
+//            $0.relayout()
+//        }
     }
 
     func set(time: Time) {
